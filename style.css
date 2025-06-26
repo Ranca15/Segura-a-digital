@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+
 :root {
     --branco: white;
-    --cor-de-fundo: #3c1f45;
-    --fundo-senha: #3c1f45;
-    --fundo-texto: #3c1f45;
-    --borda: #ae00ff;
+    --cor-de-fundo: #00162E;
+    --fundo-senha: #00244D;
+    --fundo-texto: #001E40;
+    --borda: #0075FF;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -117,23 +118,39 @@ label {
     height: 20px;
     cursor: pointer;
 }
-.forca{
+
+.barra {
+    background-color: var(--fundo-senha);
+    height: 30px;
+    width: 100%;
+}
+
+.forca {
     height: 30px;
     position: relative;
     bottom: 30px;
 }
-.fraca{
+
+.fraca {
     width: 25%;
-    background-color: #E71B32; 
+    background-color: #E71B32;
 }
-.media{
+
+.media {
     background-color: #FAF408;
     width: 50%;
 }
-.forte{
+
+.forte {
     background-color: #00FF85;
     width: 100%;
 }
+
+.parametro-senha-textos {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha {
